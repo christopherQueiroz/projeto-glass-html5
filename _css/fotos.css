@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+ul#album-fotos{
+
+	width: 700px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: hidden; /*Serve para ocultar aquilo que não cabe na tela*/
+	list-style: none; /*Serve para tirar os marcadores da lista*/
+}
+
+
+
+/*Aqui vamos configurar o elemento li, que vai receber as imagens. Note que ele recebeu largura e altura justamente para visualização da imagem,
+funcionando como um container. Estou explicando assim para que fique claro pra mim mesmo quando for olhar no futuro*/
+
+ul#album-fotos li{
+
+	float:left; /*Feito para que cada um fique à esquerda um do outro. Poderia ter colocado display inline, mas aí ficaria numa linha só, sem quebra*/
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border: 5px solid #ffffff;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	-webkit-transition: all 0.4s ease-in; /*Onde all representa o efeito de transição em todos os elementos passíveis, 0.4 é o tempo de 0,4 segundos
+	e ease-in é o efeito em que a transição começa lentamente e ganha aceleração no final*/
+}
+
+ul#album-fotos li:hover{
+	-webkit-transform: scale(1.5); /*Serve para transformar o elemento em que é acionado em uma estala. 
+	Aparentemente, no caso, trata-se de 50%. Seu tamanho (1) mais metade (.5), mas isso é mera dedução. PS.: Especulação confirmada
+	Parabéns, Sherlock*/
+
+
+}
+
+
+
+ul#album-fotos li span{
+
+	opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0,0,0,.5);
+	transition: opacity 1s;
+	font-size: 9pt;
+	line-height: 370px; /*line-height é, como o nome sugere, a definição da altura da linha*/
+	padding: 5px;
+}
+
+
+ul#album-fotos li:hover span{
+
+	opacity: 1;
+}
+
+
+
+/*Aqui vamos configurar as li, individualmente, conforme seu id, para que elas recebam o url de uma imagem como background*/
+
+ul#album-fotos li#foto01{
+	background: url('../_imagens/galeria-01.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+
+}
+
+			ul#album-fotos li#foto01:hover{
+				background-position: 0px 0px; /*Ao passar o mouse, inicialmente a imagem vonta à mesma posição com a qual foi definida*/
+				background-size: 200px 200px; 
+
+			}
+
+
+
+
+ul#album-fotos li#foto02{
+	background: url('../_imagens/galeria-02.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+}
+
+			ul#album-fotos li#foto02:hover{
+				background-position: 0px 0px; 
+				background-size: 200px 200px;
+			}
+
+
+
+
+ul#album-fotos li#foto03{
+	background: url('../_imagens/galeria-03.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+}
+
+			ul#album-fotos li#foto03:hover{
+				background-position: 0px 0px; 
+				background-size: 200px 200px;
+			}
+
+
+
+
+
+
+ul#album-fotos li#foto04{
+	background: url('../_imagens/galeria-04.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+}
+
+			ul#album-fotos li#foto04:hover{
+				background-position: 0px 0px; 
+				background-size: 200px 200px;
+			}
+
+
+
+
+
+
+ul#album-fotos li#foto05{
+	background: url('../_imagens/galeria-05.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+}
+
+			ul#album-fotos li#foto05:hover{
+				background-position: 0px 0px; 
+				background-size: 200px 200px;
+			}
+
+
+
+
+
+
+ul#album-fotos li#foto06{
+	background: url('../_imagens/galeria-06.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+}
+
+			ul#album-fotos li#foto06:hover{
+				background-position: 0px 0px; 
+				background-size: 200px 200px;
+			}
+
+
+
+
